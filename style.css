@@ -1,0 +1,65 @@
+body {
+    background: url("./bg/3876089.jpg");
+    background-attachment: fixed;
+}
+
+
+/* Header Section */
+
+.header {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* End of Header Section */
+
+h2 {
+    margin: 20px;
+}
+
+.input {
+    margin-right: 20px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.new-book {
+    background-color: rgba(231, 229, 228, 0.7);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 5px 30px;
+    position: relative;
+}
+
+.color-block {}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(231, 229, 228, 0.7) !important;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.button {
+    margin: 20px;
+}
+
+.read-status {
+    margin-bottom: 20px;
+}
