@@ -109,10 +109,11 @@ function displayBooks() {
         btnDelete.textContent = "Delete";
         divThree.appendChild(btnDelete);
         btnDelete.addEventListener("click", (e) => {
-            const currenttarget = e.target.parentNode.parentNode.childNodes[1].childNodes[0];
-            if (e.target.innerHTML == "Delete") {
-                console.log(currenttarget)
-                deleteBook(findBook(library, currenttarget.innerText));
+            library.splice(divOne.dataset.index, 1)
+            bookContainer.removeChild(divOne)
+            let children = Array.from(bookContainer.childNodes)
+            for (let i = 0; i < children.length; i++) {
+                children[i].dataset.index = i;
             }
         }
         )
