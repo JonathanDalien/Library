@@ -28,9 +28,13 @@ btnSubmit.addEventListener("click", () => {
     const pages = document.getElementById("pages").value;
     const author = document.getElementById("author").value;
     const status = document.getElementById("read").value;
-    const book = new Book(title, author, pages, status);
-    addBookToLibrary(book);
-    displayBooks();
+    if (title == "" || pages == "" || author == "") {
+        return
+    } else {
+        const book = new Book(title, author, pages, status);
+        addBookToLibrary(book);
+        displayBooks();
+    }
 })
 
 function deleteBook(currentBook) {
@@ -48,9 +52,10 @@ function findBook(libraryArray, name) {
 }
 
 
+let bookContainer = document.querySelector(".book-container")
+bookContainer.removeChild(bookContainer.childNodes[0]);
 
 function displayBooks() {
-    let bookContainer = document.querySelector(".book-container")
     for (let i = bookContainer.childElementCount; i < library.length; i++) {
 
         let divOne = document.createElement("div");
@@ -58,8 +63,6 @@ function displayBooks() {
         divOne.classList.add(...divOneClasses);
         divOne.dataset.index = i;
         bookContainer.appendChild(divOne);
-
-
         let divTwo = document.createElement("div");
         divTwo.classList.add("card-header");
         divTwo.textContent = library[i].author;

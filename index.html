@@ -26,11 +26,11 @@
             <h2>Add a new Book</h2>
         </div>
         <label for="title" class="form-label">Title:</label>
-        <input type="text" id="title" class="input form-control-sm col-xs-2">
+        <input type="text" id="title" class="input form-control-sm col-xs-2" required>
         <label for="author" class="form-label">Author:</label>
         <input type="text" id="author" class="input form-control-sm">
         <label for="pages" class="form-label">Pages:</label>
-        <input type="text" id="pages" class="input form-control-sm">
+        <input type="number" id="pages" class="input form-control-sm">
         <select name="read" id="read">
             <option value="read">I've read this book</option>
             <option value="notread">I want to read this book</option>
@@ -40,8 +40,10 @@
     </div>
     <div class="book-container">
     </div>
-    <script src="./script.js"></script>
     <!-- End of Main Section -->
+    <div class="copyright">Copyright &copy;Jonathan Dalien</div>
+    <script src="./script.js"></script>
+
 </body>
 
 </html>

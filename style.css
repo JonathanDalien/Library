@@ -63,3 +63,17 @@ h2 {
 .read-status {
     margin-bottom: 20px;
 }
+
+.copyright {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+
+}
