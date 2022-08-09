@@ -2,7 +2,7 @@
 This Project is part of the [The Odin Project]
 
 ## Links
-- [Try Sign-up Form here!](https://legendejj.github.io/Library/)
+- [Try Library here!](https://legendejj.github.io/Library/)
 
 - [Link to the Assignment](https://www.theodinproject.com/lessons/node-path-javascript-library)
 
